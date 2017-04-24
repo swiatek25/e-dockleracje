@@ -40,8 +40,6 @@ echo "<</AVPrivate [/c <<     /ChooseLangAtStartup [/b false]
 
 chown -R "$EDEKLARACJE_UID":"$EDEKLARACJE_GID" "$EDEKLARACJE_HOME"
 
-# ustawienie adresu ip hosta do CUPS
-sed -i "s/HOST_IP/$HOST_IP/" /etc/cups/client.conf
 
 exec su - $EDEKLARACJE_USER -c "
 # magic: http://www.linuxquestions.org/questions/linux-newbie-8/xlib-connection-to-0-0-refused-by-server-xlib-no-protocol-specified-152556/
